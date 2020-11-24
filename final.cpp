@@ -15,7 +15,6 @@ int main(){
 	AnalogIn Resistors(1), Temp(0);
 	//int ADCval;
 
-	while(1){
 		cout << "The pushbutton value is:" << inButtonGPIO.getValue() << endl;
 		if(inButtonGPIO.getValue() == HIGH){
 			// Run ADC resistors
@@ -39,5 +38,5 @@ int main(){
 			outLEDGPIO.setValue(LOW);
 			usleep(300000);
 		}
-	}
+	
 }
