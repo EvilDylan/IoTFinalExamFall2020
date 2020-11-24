@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ final.cpp AnalogIn.cpp -o simple -pthread
